@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
-export default function AuthForm({ mode, role }) {
+function AuthForm({ mode, role }) {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: "",
@@ -105,3 +105,5 @@ const handleSubmit = async (e) => {
     </form>
   );
 }
+
+export default AuthForm
