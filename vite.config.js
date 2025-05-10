@@ -6,14 +6,18 @@ import path from 'path'
 export default defineConfig({
   plugins: [
     react({
-      jsxRuntime: 'automatic',
-      jsxImportSource: 'react'
+      jsxRuntime: 'classic',
+      jsxImportSource: 'react',
+      babel: {
+        plugins: [
+          ['@babel/plugin-transform-react-jsx', { runtime: 'classic' }]
+        ]
+      }
     })
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      'react': path.resolve(__dirname)
+      '@': path.resolve(__dirname, 'src')
     }
   },
   base: './',
