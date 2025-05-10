@@ -3,7 +3,7 @@ import './App.css';
 import RoleSelector from './Selection';
 import UserAuthPage from './pages/userauth';
 import AdminAuthPage from './pages/adminauth';
-import CoursePreview from "./pages/CoursePreview";
+import CoursePreview from "./pages/coursePreview";
 import MyCourses from "./pages/MyCourses";
 import AdminCourses from "./pages/Create";
 
