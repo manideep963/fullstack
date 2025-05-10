@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AuthForm from "../../react/src/components/AuthForm.jsx";
+import AuthForm from "../components/AuthForm.jsx";
 
 export default function AdminAuthPage() {
   const [mode, setMode] = useState("signin");
