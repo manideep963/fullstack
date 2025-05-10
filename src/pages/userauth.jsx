@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AuthForm from "src/components/AuthForm.jsx";
+import AuthForm from "../components/AuthForm.jsx";
 // import { useNavigate } from "react-router-dom";
 
 export default function UserAuthPage() {
