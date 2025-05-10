@@ -9,7 +9,7 @@ const MyCourses = () => {
     const fetchMyCourses = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:3000/my-courses", {
+        const res = await axios.get("https://backend-4zts.onrender.com/my-courses", {
           headers: {
             Authorization: `Bearer ${token}`
           }

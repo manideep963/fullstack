@@ -10,7 +10,7 @@ const AdminCourses = () => {
 
   const fetchCourses = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/admin/course/bulk", {
+      const res = await axios.get("https://backend-4zts.onrender.com/admin/course/bulk", {
         headers: { Authorization: `Bearer ${token}` }
       });
       setCourses(res.data);
@@ -34,7 +34,7 @@ const AdminCourses = () => {
     try {
       await axios({
         method,
-        url: `http://localhost:3000${url}`,
+        url: `https://backend-4zts.onrender.com${url}`,
         headers: { Authorization: `Bearer ${token}` },
         data: form
       });

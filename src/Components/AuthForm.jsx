@@ -13,7 +13,7 @@ export default function AuthForm({ mode, role }) {
   });
 
   const isSignup = mode === "signup";
-  const baseURL = "http://localhost:3000"; 
+  const baseURL = "https://backend-4zts.onrender.com"; 
   const endpoint = `${baseURL}/${role}/${mode}`;
 
   const handleChange = (e) => {

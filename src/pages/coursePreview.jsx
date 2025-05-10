@@ -9,7 +9,7 @@ const CoursePreview = () => {
 
  useEffect(() => {
   const token = localStorage.getItem("user_token");
-  axios.get("http://localhost:3000/course/preview", {
+  axios.get("https://backend-4zts.onrender.com/course/preview", {
     
   })
     .then(res => setCourses(res.data.courses))
@@ -21,7 +21,7 @@ const CoursePreview = () => {
     try {
       const token = localStorage.getItem("user_token");
       const res = await axios.post(
-        "http://localhost:3000/purchase",
+        "https://backend-4zts.onrender.com/purchase",
         { courseId },
         {
           headers: {
