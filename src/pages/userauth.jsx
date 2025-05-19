@@ -6,7 +6,7 @@ export default function UserAuthPage() {
    
   const [mode, setMode] = useState("signin");
 
-  return 
+  return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50">
       <h2 className="text-2xl font-bold mb-4 text-blue-700">User Authentication</h2>
       <div className="mb-4 space-x-4">
